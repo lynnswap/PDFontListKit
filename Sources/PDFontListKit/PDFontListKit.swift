@@ -86,7 +86,6 @@ public struct FontList: View {
             }
         }
         .animation(.smooth(duration:0.2),value:searchText)
-        .listStyle(.plain)
         .searchable(text: $searchText)
         .autocorrectionDisabled()
         .task{
@@ -103,6 +102,7 @@ public struct FontList: View {
     @Previewable @State var selectedFontName:String = ""
     NavigationStack {
         FontList(selection: $selectedFontName)
+            .listStyle(.plain)
     }
 }
 #endif
