@@ -8,6 +8,7 @@ PDFontListKit is a Swift package that provides a SwiftUI view for browsing and s
 - Built with SwiftUI and works on iOS and macOS.
 - Searchable list with smooth animations.
 - Simple selection binding to receive the chosen font name.
+- List style can be customized externally via SwiftUI modifiers.
 
 ## Usage
 
@@ -18,6 +19,8 @@ Add `PDFontListKit` as a dependency in your Swift Package or Xcode project. Then
 
 var body: some View {
     FontList(selection: $selectedFontName)
+        // Customize the list style from your own view
+        .listStyle(.plain)
 }
 ```
 
