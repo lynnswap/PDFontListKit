@@ -1,0 +1,26 @@
+# PDFontListKit
+
+PDFontListKit is a Swift package that provides a SwiftUI view for browsing and selecting fonts available on iOS and macOS.
+
+## Features
+
+- Lists font families and their individual fonts.
+- Built with SwiftUI and works on iOS and macOS.
+- Searchable list with smooth animations.
+- Simple selection binding to receive the chosen font name.
+
+## Usage
+
+Add `PDFontListKit` as a dependency in your Swift Package or Xcode project. Then use `FontList` in your SwiftUI view:
+
+```swift
+@State private var selectedFontName: String = ""
+
+var body: some View {
+    FontList(selection: $selectedFontName)
+}
+```
+
+## License
+
+This project is released under the MIT License. See [LICENSE](LICENSE) for details.
